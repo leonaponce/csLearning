@@ -9,6 +9,7 @@ Learn to represent knowledge w/ data structures
 Utilize iteration and recursion
 Organize & modularize systems using object classes and methods
 Learn about the various classes and complexities of algorithms
+
 ALGORITHMS                                       
 = a process or a set of rules 2 be followed in calculations or other problem solving operations
 1) sequence of steps
@@ -19,3 +20,104 @@ Instantiation = a concrete instance or particular realization of an abstraction 
 ABSTRACTION
 Establishes a level of complexity on which the person interacts with the system, suppressing the more complex details below the current level
 Occurs anytime u see a simplified version of a more complex system (e.g. subway map or heart w/ arrow)
+
+FUNCTIONS OF A COMPUTER
+1) calculate
+2) remember
+
+LIMITATIONS OF C.
+Turing Halting Problem = we cannot know with certainty that another program will work 100% of the time
+Impossible to solve
+Encryption = process of converting data into code esp 2 prevent unauth access; capitalizes off unsolvable computer problems
+
+TYPES OF KNOWLEDGE
+Declarative = facts
+Imperative = recipe; step by step process
+E.g. algorithm
+
+STORED PROGRAM COMPUTER
+=sequence of instructions stored inside a computer
+Built from predefined set of primitive instructions
+Arithmetic logic
+Simple tests
+Moving data
+Interpreter = a special program in a computer that walks thru the set of instructions in the program in order(=executing each instruction), doing the computations the programmer desires
+Uses tests to change flow of control through sequences
+Stops when done
+(ant.) Fixed program = designed to compute precisely one computation
+
+BASIC MACHINE ARCHITECTURE
+Memory = storage for data or program
+CPU = Central Processing Unit
+Arithmetic Logic Unit (ALU)= does primitive ops
+Control Unit = keeps track of operations I wish to perform in the ALU at each point in time; tells us where we are in a sequence of instructions
+Contains program counter = points to the location of the first instruction; when the programmer asks the machine to execute, the program counter reads that first instruction and THEN adds one to the program counter which takes it to the next step in the sequence
+
+
+BASIC PRIMITIVES
+Most C. come w/ simple arithmetic and logic operations
+Turing showed u can compute ANYTHING that is computable w/ just 6 primitives
+Can abstract methods to create new primitives
+E.g. in programming the sqrt algorithm we “act as if” the sqrt was a primitive that came with the C
+Turing Complete= Anything computable in 1 programming language is computable in other programming languages
+Though some things are easier or more convenient to compute in 1 language vs the others
+E.g. Matlab easier 2 manipulate matrices
+C is easier for web programming
+
+The computer does not have to simply execute the instructions in strict, linear sequence, just like walking in a straight line. The computer executes the instructions mostly in a linear sequence, except sometimes it jumps to a different place in the sequence.This means that if an instruction says to branch or go to a different instruction. This is called branching in programs, & is a key way that flow is controlled depending on certain conditions.
+
+CREATING RECIPES
+Program = a specific set of statements we can store in the machine so the interpreter can run those operations with the primitives to do work for us
+Recall a programming language provides a set of primitive operations; the primitives themselves are inherent to the machine
+Expressions = complex but legal combinations of primitives in a programming language
+Any legal expression has a value associated with it
+Expressions and computations have values and meanings in a programming language
+
+ASPECTS OF LANGUAGE
+Primitive constructs
+English: words
+Programming languages: strings, numbers, simple operators
+Syntax = Determines whether a string has meaning; parsing of a sentence to knows if a subject is legal or not
+“Makes sense logically e.g. “dog eats food” vs. “dog turtle cat”
+Semantics = the meaning associated w/ that syntactically correct string of symbols w/ no semantic errors
+Static semantics = tells us which syntactically valid strings actually have a meaning
+E.g. 3* “hi” doesn’t make sense bc I cannot multiply a number and a string
+In programming languages, only one meaning for semantically and syntactically correct, BUT it might not express the meaning you intended
+
+
+PYTHON PROGRAMS
+Program = sequence of definitions and commands
+Definitions are evaluated
+Commands are executed by Python interpreter in a shell
+Shell = a window into which one can type expressions. The expressions are passed to the interpreter which follows the set of instructions to figure out what the semantics are (=the meaning of the expression); a window the interpreter is “listening to”
+Commands (=statements) instruct interpreter to do something
+Can b typed directly into shell or stored in a file that is read into the shell and evaluated
+
+OBJECTS
+objects=the fundamental primitives we use to represent data; programs manipulate data objects to get parts of those objects or to so something with them
+Every object has a type associated with it that tells us what kind of thing it is and tells the program whether it can act on it or not
+Can be
+1) scalars = cannot be subdivided
+2) non-scalar = have internal structure that can be accessed; can be subdivided
+
+SCALAR OBJECTS
+In Python, very few of them
+Int = represents integers e.g 5
+float= represents real numbers; things w/ #s after decimal point e.g 3.27
+bool= reps Boolean values, T or F
+NoneType - special and has one value, None
+
+**Can use type() to see the type of an object**
+
+CASTING =TYPE CONVERSION
+Important, esp for numbers
+
+
+
+                      
+
+
+
+
+
+
