@@ -113,8 +113,133 @@ CASTING =TYPE CONVERSION
 Important, esp for numbers
 
 
+PYTHON PROGRAMS
+Program = sequence of definitions and commands
+Definitions are evaluated
+Commands are executed by Python interpreter in a shell
+Shell = a window into which one can type expressions. The expressions are passed to the Python interpreter which follows the set of instructions to figure out what the semantics are (=the meaning of the expression); a window the interpreter is “listening to”
+Execute directly in it OR we can store it in a file that gets read into the shell when we're ready to use it
+Commands (=statements) instructing interpreter to do something
+we can execute directly within Python (i.e. Execute within shell)
+Can b typed directly into shell or stored in a file that is read into the shell and evaluated
 
-                      
+OBJECTS
+objects=the fundamental primitives we use to represent data; programs manipulate data objects to get parts of those objects or to do something with them
+Every object has a type associated with it that tells us what kind of thing it is and tells the program whether it can act on it or not
+Valuable bc if a program is expecting a number and I give it a string, it's not going to try and do something with it. 
+Can be
+1) scalars = cannot be subdivided
+2) non-scalar = have internal structure that can be accessed; can be subdivided
+
+SCALAR OBJECTS
+In Python, very few of them
+Int = represents integers e.g 5
+float= represents real numbers; things w/ #s after decimal point e.g 3.27
+bool= reps Boolean values, T or F
+NoneType - special and has one value, None
+
+**Can use type() to see the type of an object**
+
+CASTING =TYPE CONVERSION
+Important, esp for numbers
+E.g. integer 5 converted to a floating number = 5.0
+E.g float 3.4 to int = 3
+Note the number is simply truncated
+Print returns that NoneType scalar object = it prints out nothing
+in the middle of a computation and we want to print something out to the shell, we can use a print command to do that
+
+EXPRESSIONS
+Expressions = formed by combining objects and operators 
+Syntax for simple expression:
+Object + operator + another object
+Any expression that is syntactically valid has a value, which has a type
+Compile = convert (a program) into a machine-code or lower-level form in which the program can be executed.
+
+COMPARISON OPERATORS ON -ints & float
+Operator list (i and j are any variable names)
+i // j   → int division “integer division” = quotient w/o remainder
+i / j    → division “standard division” = results in float
+i % j  → just the remainder
+i ** j   → i raised to power of j
+i == j → equality test, true if i is equal to j
+i != j  → inequality test, T if i not equal to j
+
+If either a float, the result is a float
+PEMDAS for operator precedence order
+
+EXAMPLES
+- - 4 = (-1)*(-1)*(4)
+10/3 = 3.3333 (to 4 decimal place)
+
+BINDING VARIABLES AND VALUES	
+a value to a variable name		
+pi_approx = 22/7
+			
+value stored in computer memory				
+an assignment binds name to value
+				
+retrieve value associated with name or variable by invoking the name, by typing pi 
+
+In Python, we do an assignment using an equal sign.
+There is an assignment of a name to a value.
+E.g. Tthe equal sign gives us an expression
+called an assignment that says bind to
+or associated with the name pi the value 3.14159. Once we have that, we can use pi wherever we would like.
+I've bound pi to a number.
+
+It's simply following the sequence
+of instructions we gave it.
+And that means that if we want to do something different,
+we would need to recompute area.
+An assignment statement says, find the value
+on the right hand side of the expression.
+Take the name on the left and assign that name to that value.
+
+
+Incrementing = +1 (shorthand “+=”)
+And that is simply short for saying radius += 1 is radius equals radius incremented by 1.
+
+ABSTRACTING EXPRESSIONS	
+
+LOGIC OPERATORS ON bools
+a and b are any variable names
+not a → True is a is False; False if a is T
+a and b → True if both are true
+a or b → True if either or both are T
+
+BRANCHING PROGRAMS
+Conditional = the simplest branching statement; a test that evaluated T or F
+Indentation provides a visual structure that reflects the semantic structure of the program
+Run in constant time = max time of program run depends on programs length; in most cases code executed once
+EX:
+
+X = int (input (‘Enter and integer: ))  
+if x%2 == 0:    ← Test
+     print (‘’)
+    print (‘Even’)
+else:
+    print (‘’)
+    print (‘Odd’)
+print (‘Done with conditional’)
+
+COMPOUND BOOLEANS
+Elif =”else if” if the test above is F, see if this is T. If T, execute elif block, but if F, continue w/ program
+A way of giving a sequence of tests in order
+EX:
+if x < y and x < z:   
+     print (‘x is least’)
+   
+elif y < z:
+    print (‘y is least’)
+
+else: 
+    print (‘z is least’)
+
+
+			
+				
+					
+
 
 
 
